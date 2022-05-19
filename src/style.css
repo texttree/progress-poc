@@ -1,0 +1,36 @@
+html, body {
+  margin: 0;
+  padding: 0;
+}
+#repos, #books {
+  border: 1px solid #ccc;
+  overflow: auto;
+}
+#books {
+  height: calc(70vh - 2px);
+}
+#repos {
+  height: calc(30vh - 2px);
+}
+
+#books {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+#books>div{
+  flex: 1 0 auto;
+}
+
+.todo {
+  color: gray;
+}
+
+.progress {
+  color: blue;
+}
+
+.done {
+  color: green;
+}
