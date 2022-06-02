@@ -32,7 +32,7 @@ const showStatus = (repo) => {
           const chapters = document.createElement('span');
           name.textContent = translateEn[book] + ' | ' + statusesRu[el.status] + ' | ';
           if (el.date_start) {
-            date.textContent = el.date_start + ' - ' + (el.date_end||'--.--.--') + ' | ';
+            date.textContent = el.date_start + ' - ' + (el.date_end || '--.--.--') + ' | ';
           }
           if (el.date_plan_start) {
             plan_date.textContent =
