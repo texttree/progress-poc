@@ -8,7 +8,7 @@ const result = document.querySelector('#repos');
 const booksBlock = document.querySelector('#books');
 
 const parseYaml = (obj) => {
-  let books = JSON.parse(JSON.stringify(defaultBooks));
+  let books = structuredClone(defaultBooks);
   obj.forEach((element) => {
     books[element.identifier] = {...books[element.identifier], ...element};
   });
